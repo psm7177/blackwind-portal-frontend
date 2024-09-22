@@ -2,26 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* font space */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("/fonts/pretendard/Pretendard-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("/fonts/pretendard/Pretendard-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("/fonts/pretendard/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("/fonts/pretendard/Pretendard-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("/fonts/pretendard/Pretendard-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
 }

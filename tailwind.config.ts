@@ -12,6 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        "pretendard-regular": ["Pretendard-Regular", "sans-serif"],
+        "pretendard-light": ["Pretendard-Light", "sans-serif"],
+        "pretendard-medium": ["Pretendard-Medium", "sans-serif"],
+        "pretendard-bold": ["Pretendard-Bold", "sans-serif"],
+        "pretendard-semibold": ["Pretendard-SemiBold", "sans-serif"],
+      },
     },
   },
   plugins: [],
