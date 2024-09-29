@@ -77,7 +77,7 @@ const HomePage: NextPage = () => {
         <div className="min-h-screen flex w-full items-center justify-center relative z-10">
           <div className="flex flex-col w-[500px] gap-2 p-8 items-center justify-center bg-[#040A3F] rounded-[15px] text-white shadow-lg">
             {open ? (
-              <div className="w-full flex flex-col">
+              <div className="w-full">
                 <div className="text-[38px]">Join Us</div>
                 <form onSubmit={handleSubmitSignUp(handleSignUpSubmit)}>
                   <TextInput
@@ -132,7 +132,7 @@ const HomePage: NextPage = () => {
                 </div>
               </div>
             ) : (
-              <div className="w-full flex flex-col">
+              <div className="w-full">
                 <div className="text-[40px] text-center">WELCOME BLACKWIND!</div>
                 <div className="text-[32px] text-center">PLEASE LOGIN</div>
                 <form onSubmit={handleSubmitSignIn(handleLoginSubmit)}>

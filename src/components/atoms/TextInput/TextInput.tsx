@@ -56,7 +56,7 @@ const TextInput: ForwardRefRenderFunction<HTMLInputElement, TextInputProps> = (
   return (
     <div className={className}>
       {label && (
-        <div className="font-pretendard-regular mb-[10px] text-sm text-[#747474]">
+        <div className="font-pretendard-regular mb-[5px] text-sm text-[#747474]">
           {label}
         </div>
       )}
