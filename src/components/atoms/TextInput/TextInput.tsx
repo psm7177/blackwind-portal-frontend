@@ -27,6 +27,7 @@ const TextInput: ForwardRefRenderFunction<HTMLInputElement, TextInputProps> = (
     initial,
     handleInput,
     type,
+    autoComplete = "off", // 기본값을 off로 설정
     ...rest
   } = props;
 
@@ -74,16 +75,13 @@ const TextInput: ForwardRefRenderFunction<HTMLInputElement, TextInputProps> = (
           type={showPassword ? "text" : type}
           placeholder={placeholder}
           value={inputValue}
+          autoComplete={type === "password" ? "new-password" : "off"} // 비밀번호 필드 처리
           onFocus={() => setIsFocused(true)}
           onInput={handleInputChange}
           onBlur={() => setIsFocused(false)}
-          onReset={(event) => {
-            setInputValue(event.currentTarget.value);
-            console.log("rrrr ", event.currentTarget.value);
-          }}
         />
 
-        {inputValue && isFocused && type != "password" && (
+        {inputValue && isFocused && type !== "password" && (
           <button
             type="button"
             className="absolute right-2 top-1/2 transform -translate-y-1/2"
@@ -107,5 +105,4 @@ const TextInput: ForwardRefRenderFunction<HTMLInputElement, TextInputProps> = (
     </div>
   );
 };
-
 export default forwardRef(TextInput);
