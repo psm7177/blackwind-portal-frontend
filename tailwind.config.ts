@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "dark-blue": "#144272",
+        "blue": "#205295",
+        "sky-blue": "#4F9FE5",
+        "text-blue":"#06192F",
+        "page": "#F6F0E5"
       },
       fontFamily: {
         "pretendard-regular": ["Pretendard-Regular", "sans-serif"],
