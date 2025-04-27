@@ -12,6 +12,7 @@
     "@svgr/webpack": "^8.1.0",
     "axios": "^1.7.7",
     "classnames": "^2.5.1",
+    "framer-motion": "^12.6.3",
     "next": "14.2.13",
     "next-auth": "^4.24.7",
     "react": "^18",
